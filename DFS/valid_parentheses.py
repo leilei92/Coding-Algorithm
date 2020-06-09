@@ -14,6 +14,7 @@ class Solution(object):
         if l == r == n: # len(sequence) == 2*n
             answers.append(''.join(sequence))
             return
+
         if l < n:
             sequence.append('(')
             self.bt(answers, sequence, n, l + 1, r)
